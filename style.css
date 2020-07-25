@@ -4,6 +4,9 @@
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
+ul {
+  list-style-type: none;
+}
 a {
   text-decoration: none;
   color: #333;
@@ -15,7 +18,6 @@ a:visited {
   color: #333;
 }
 body {
-  font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
 }
 .header {
@@ -63,7 +65,6 @@ body {
   height: 100%;
 }
 .menu ul li {
-  list-style-type: none;
   margin-right: 15px;
   font-size: 14px;
   height: 100%;
@@ -119,6 +120,7 @@ body {
   height: 30px;
   position: relative;
   display: flex;
+  font-size: 12px;
 }
 .widget-ticker > strong {
   color: #fff;
@@ -164,7 +166,6 @@ body {
   align-items: center;
 }
 .widget-ticker .widget-weather li {
-  list-style-type: none;
   display: block;
   float: right;
 }
@@ -182,6 +183,7 @@ body {
   width: 100%;
   display: flex;
   margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 .content .left {
   width: 30%;
@@ -273,7 +275,7 @@ body {
   display: block;
 }
 .slideshow-container .slideshow-title h3 {
-  font-size: 1.5em;
+  font-size: 1em;
   padding: 0 15px 0 20px;
   margin: 6px 0 4px 0;
   position: relative;
@@ -301,7 +303,6 @@ h3:before {
   margin-left: 0px;
 }
 .slideshow-container .mySlides ul li {
-  list-style-type: none;
   width: 204px;
   margin: 0px 10px;
   background-color: #f7f7f7;
@@ -389,7 +390,7 @@ h3:before {
 }
 
 .large-title {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 600;
   color: #000;
   display: inline-block;
@@ -404,7 +405,6 @@ h3:before {
   align-items: center;
 }
 .multimedia .multi-menu ul li {
-  list-style-type: none;
   margin-right: 30px;
   font-size: 14px;
   font-weight: bold;
@@ -438,4 +438,112 @@ h3:before {
 }
 .multi-main .multi-item:nth-child(4n+3) {
     margin-right: 0;
+}
+.after {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.content .left:nth-child(2) {
+  width: calc(100% - 300px);
+}
+.list-new-second {
+  display: flex;
+  color: #333;
+  line-height: 1.4;
+  font-size: 1.3em;
+  font-weight: bold;
+  
+}
+.list-new-second a{
+  width: 33%;
+  margin-right: 15px;
+}
+.list-new-second a img {
+  width: 100%;
+  height: 171.59px;
+  object-fit: cover;
+}
+.list-new-second .summary {
+  width: calc(67% - 15px);
+}
+.list-new-second .summary a{
+  margin-right: 0;
+}
+.list-new-second .summary p {
+  font-size: 11px;
+  color: #aaa;
+  font-weight: normal;
+  margin: 6px 0;
+}
+.list-new-second .summary p:last-child {
+  font-size: 0.64em;
+  color: #888;
+  margin: 0;
+  line-height: 1.4;
+}
+.content .right2 {
+  width: 300px;
+}
+.right2 .widget-finance {
+  width: 100%;
+  height: 70px;
+  padding: 13px 10px 8px;
+  background: #f7f7f7;
+  margin: 0 0 10px;
+  font-size: 12px;
+  display: block;
+}
+.widget-finance ul:before {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  color: #888;
+}
+.widget-finance ul.stock {
+  width: 54%;
+  float: left;
+  position: relative;
+}
+.widget-finance ul.stock:before {
+  content: "Chứng khoán";
+}
+.widget-finance ul.stock:after {
+  content: "";
+  display: block;
+  width: 1px;
+  position: absolute;
+  top: 0px;
+  right: -7px;
+  bottom: 0;
+  background: #eaeaea;
+}
+.widget-finance ul.exchange:before {
+  content: "Tỉ giá USD";
+}
+.widget-finance ul li {
+  line-height: 16px;
+  text-align: right;
+}
+.widget-finance ul li strong {
+  float: left;
+}
+.widget-finance ul li em.negative {
+  background: #ffe0e0;
+}
+.widget-finance ul li em {
+  font-style: normal;
+  display: inline-block;
+  padding: 0 3px;
+  background: #fff;
+  font-size: 8px;
+  position: relative;
+  top: -2px;
+  line-height: 13px;
+}
+.widget-finance ul.exchange {
+  width: 40%;
+  float: right;
+  margin-right: 1%;
 }
