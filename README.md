@@ -1,2 +1,2 @@
 # Zing-News
-test
+Clone home page Zing News
