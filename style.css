@@ -50,14 +50,14 @@ body {
   margin: 0 auto;
   display: flex;
 }
-.header-content .logo {
+.logo {
   width: 100px;
   height: 100%;
   padding: 5px 0;
   top: 1px;
   left: 0;
 }
-.header-content .logo a {
+.logo a {
   background-image: url(https://static-znews.zadn.vn/images/logo-zing-home.svg);
   background-size: cover;
   display: block;
@@ -118,11 +118,13 @@ body {
   display: inline-block;
 }
 .container {
-  padding-top: 52px;
   width: 1100px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+}
+.container:first-child {
+  padding-top: 52px;
 }
 .container .widget-ticker {
   margin-bottom: 15px;
@@ -204,7 +206,7 @@ body {
   float: left;
   padding-right: 20px;
 }
-.left .list-news {
+.list-news {
   width: 100%;
   font-family: "Roboto", Ubuntu, sans-serif;
   line-height: 1.4;
@@ -213,20 +215,20 @@ body {
   border-bottom: 1px solid #dedede;
   display: flex;
 }
-.left .list-news:last-child {
+.list-news:last-child {
   border-bottom: none;
 }
-.left .list-news .img {
+.list-news .img {
   width: 120px;
   height: 80px;
   margin-right: 12px;
+  position: relative;
 }
-
-.left .list-news p a img {
+.list-news p a img {
   width: 120px;
   height: 80px;
 }
-.left .list-news .title a {
+.list-news .title a {
   color: #333;
   line-height: 1.4;
   font-size: 0.9rem;
@@ -572,6 +574,17 @@ h3:before {
   float: right;
   margin-right: 1%;
 }
+.right2 .ads {
+  width: 100%;
+  height: 47%;
+  margin-bottom: 20px;
+}
+.right2 .ads .ads1 {
+  top: 62px;
+  height: 600px;
+  position: sticky;
+  box-shadow: 0px 0px 5px 1px #ccc;
+}
 .magazine {
   background: #eee;
   padding: 40px 0 0px;
@@ -589,11 +602,11 @@ h3:before {
 }
 .mySlides2 ul li:hover {
   box-shadow: 0 5px 5px #000;
-	border-radius: 4px
+  border-radius: 4px;
 }
 .mySlides2 ul li:hover a img {
   transform: scale(1.1);
-	border-radius: 4px
+  border-radius: 4px;
 }
 .mySlides2 ul li:hover a p {
   color: #ffde76;
@@ -692,4 +705,179 @@ h3:before {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.container .category-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+.container .category-box .category {
+  width: 23.5%;
+  margin-right: 2%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.category-box .category:last-child {
+  margin-right: 0;
+}
+.category-box .category h3 {
+  font-size: 1.25rem;
+}
+.category .card {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+.category .list-news img {
+  width: 105px;
+  height: 70px;
+}
+.category .list-news .title {
+  font-size: 0.7em;
+}
+.category-box .video {
+  width: calc(100% - 300px);
+  margin-bottom: 50px;
+}
+.category-box .scroll-view {
+  width: 300px;
+  height: 450px;
+  overflow-y: scroll;
+  padding: 10px;
+  background-color: #eee;
+  position: relative;
+}
+
+.scroll-view::-webkit-scrollbar {
+  width: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+  position: absolute;
+  display: none;
+}
+.scroll-view::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+.scroll-view:hover::-webkit-scrollbar {
+  display: block;
+}
+.scroll-view .list-news .img a span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 12px;
+  color: #fff;
+  background-color: rgba(117, 117, 117, 0.8);
+  padding-right: 5px;
+}
+.scroll-view .list-news .img a span i {
+  padding: 5px;
+  padding-left: 7px;
+  background-color: #0076bf;
+}
+.scroll-view .list-news .img a span strong {
+  width: 100%;
+  height: 100%;
+}
+.scroll-view .list-news .title {
+  position: absolute;
+  padding: 0 10px 0 130px;
+}
+.scroll-view .list-news .title span {
+  margin: -3px 5px 0px 0px;
+  display: block;
+  float: left;
+}
+.scroll-view .list-news .title span i {
+  color: #fff;
+  background-color: #bbbbbb;
+  border-radius: 2px;
+  padding: 3px;
+  padding-left: 4px;
+  font-size: 5px;
+}
+.scroll-view .list-news .title a {
+  font-size: 13px;
+}
+.promotion {
+  width: 100%;
+  background-color: #f1faff;
+  padding: 25px 0 0;
+}
+.promotion .container {
+  padding-top: 0;
+}
+.box-promotion {
+  width: 32%;
+  margin-right: 2%;
+}
+.box-promotion:last-child {
+  margin-right: 0;
+}
+.box-promotion span {
+  width: 14px;
+}
+.box-promotion span i {
+  color: #bbbbbb;
+  font-size: 16px;
+}
+.box-promotion .promotion-title {
+  position: relative;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+.box-promotion .promotion-title a {
+  color: #00b6af;;
+}
+.box-promotion .list-news {
+  border-bottom: 1px dashed #bfbfbf;
+}
+.box-promotion .list-news:last-child {
+  border-bottom: none;
+}
+.box-promotion .list-news .title a {
+  font-size: .8em;
+}
+.footer {
+  width: 100%;
+  margin: 0 auto 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #888;
+  font-size: 12px;
+  background: #f7f7f7;
+}
+.footer .container {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  display: block;
+  height: 100px;
+}
+.footer .container .logo {
+  margin-right: 20px;
+  float: left;
+}
+.footer .container .web-info {
+  line-height: 1.6;
+  float: left;
+}
+.footer .container .copyright-info {
+  float: right;
+}
+.copyright-info p {
+  text-align: right;
+  line-height: 1.6;
+}
+.copyright-info .links {
+  float: right;
+}
+.copyright-info .links li {
+  display: inline;
+  padding: 0px 10px;
+  border-right: 1px solid #ccc;
+}
+.copyright-info .links li:last-child {
+  padding-right: 0;
+  border-right: none;
 }
